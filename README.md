@@ -26,12 +26,21 @@ Debes estar en la carpeta raìz del proyecto.
 
 ```
 cd backend_express
-npm install
 ```
 
 ## Crear el contenedor para el backend
 
 `docker build -t ${USER_NAME}/mande_backend .`
+
+## Instalar las dependencias con npm
+
+`docker run -it --rm -v $(pwd):/usr/src/app ${USER_NAME}/mande_backend /bin/bash`
+
+En la terminal del contenerdor ejecutar
+
+```npm install
+   exit
+```
 
 ## Crear un contenedor con la imagen y conectarla con el servidor de bases de datos
 
