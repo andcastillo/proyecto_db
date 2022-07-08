@@ -38,7 +38,8 @@ cd backend_express
 
 En la terminal del contenerdor ejecutar
 
-```npm install
+```
+npm install
    exit
 ```
 
